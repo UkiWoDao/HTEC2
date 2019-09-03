@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-09-03T21:15:02 CEST" name="Default suite" finished-at="2019-09-03T21:15:35 CEST" duration-ms="33370">
+    <groups>
+    </groups>
+    <test started-at="2019-09-03T21:15:02 CEST" name="Default test" finished-at="2019-09-03T21:15:35 CEST" duration-ms="33370">
+      <class name="tests.PeoplePageTest">
+        <test-method is-config="true" signature="initTestSetup()[pri:0, instance:tests.PeoplePageTest@2898ac89]" started-at="2019-09-03T21:14:56 CEST" name="initTestSetup" finished-at="2019-09-03T21:15:02 CEST" duration-ms="5603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTestSetup -->
+        <test-method is-config="true" signature="fillLogInFormWithExistingUserData()[pri:0, instance:tests.PeoplePageTest@2898ac89]" started-at="2019-09-03T21:15:02 CEST" name="fillLogInFormWithExistingUserData" finished-at="2019-09-03T21:15:02 CEST" duration-ms="588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillLogInFormWithExistingUserData -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PeoplePageTest@2898ac89]" started-at="2019-09-03T21:15:02 CEST" name="setUp" finished-at="2019-09-03T21:15:02 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyFullNameFieldIsRequired()[pri:1, instance:tests.PeoplePageTest@2898ac89]" started-at="2019-09-03T21:15:02 CEST" name="verifyFullNameFieldIsRequired" finished-at="2019-09-03T21:15:06 CEST" duration-ms="3436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFullNameFieldIsRequired -->
+        <test-method is-config="true" signature="navigateToDashboard()[pri:0, instance:tests.PeoplePageTest@2898ac89]" started-at="2019-09-03T21:15:06 CEST" name="navigateToDashboard" finished-at="2019-09-03T21:15:06 CEST" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToDashboard -->
+        <test-method signature="verifyFullNameCantBeShorterThan4Chars(java.lang.String)[pri:2, instance:tests.PeoplePageTest@2898ac89]" started-at="2019-09-03T21:15:06 CEST" name="verifyFullNameCantBeShorterThan4Chars" finished-at="2019-09-03T21:15:09 CEST" duration-ms="3280" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFullNameCantBeShorterThan4Chars -->
+        <test-method is-config="true" signature="navigateToDashboard()[pri:0, instance:tests.PeoplePageTest@2898ac89]" started-at="2019-09-03T21:15:09 CEST" name="navigateToDashboard" finished-at="2019-09-03T21:15:10 CEST" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToDashboard -->
+        <test-method signature="verifyFullNameCantContainNumbers(java.lang.String)[pri:3, instance:tests.PeoplePageTest@2898ac89]" started-at="2019-09-03T21:15:10 CEST" name="verifyFullNameCantContainNumbers" finished-at="2019-09-03T21:15:18 CEST" duration-ms="8291" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Uros123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='invalid-feedback'] (tried for 5 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='invalid-feedback'] (tried for 5 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at pageObjects.BasePage.waitForElementToAppear(BasePage.java:26)
+at tests.PeoplePageTest.verifyFullNameCantContainNumbers(PeoplePageTest.java:90)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='invalid-feedback']"}
+  (Session info: chrome=76.0.3809.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-SE2KBIM', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Uros\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60723}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 72fa0bf08600a928a4338ae4e4e5977d
+*** Element info: {Using=xpath, value=//div[@class='invalid-feedback']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFullNameCantContainNumbers -->
+        <test-method is-config="true" signature="navigateToDashboard()[pri:0, instance:tests.PeoplePageTest@2898ac89]" started-at="2019-09-03T21:15:18 CEST" name="navigateToDashboard" finished-at="2019-09-03T21:15:18 CEST" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToDashboard -->
+        <test-method signature="verifyFullNameCanBeValidString(java.lang.String)[pri:4, instance:tests.PeoplePageTest@2898ac89]" started-at="2019-09-03T21:15:18 CEST" name="verifyFullNameCanBeValidString" finished-at="2019-09-03T21:15:27 CEST" duration-ms="8485" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Radojica]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFullNameCanBeValidString -->
+        <test-method is-config="true" signature="navigateToDashboard()[pri:0, instance:tests.PeoplePageTest@2898ac89]" started-at="2019-09-03T21:15:27 CEST" name="navigateToDashboard" finished-at="2019-09-03T21:15:27 CEST" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToDashboard -->
+        <test-method signature="verifyPersonCanBeDeleted(java.lang.String)[pri:5, instance:tests.PeoplePageTest@2898ac89]" started-at="2019-09-03T21:15:27 CEST" name="verifyPersonCanBeDeleted" finished-at="2019-09-03T21:15:35 CEST" duration-ms="7831" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Radojica]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPersonCanBeDeleted -->
+        <test-method is-config="true" signature="navigateToDashboard()[pri:0, instance:tests.PeoplePageTest@2898ac89]" started-at="2019-09-03T21:15:35 CEST" name="navigateToDashboard" finished-at="2019-09-03T21:15:35 CEST" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToDashboard -->
+      </class> <!-- tests.PeoplePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
